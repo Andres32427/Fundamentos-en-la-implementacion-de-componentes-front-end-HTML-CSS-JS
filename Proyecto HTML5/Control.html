@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lista de Etiquetas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tema.css">"
+</head>
+<body>
+  <main>
+    <header id="hprincipal">
+        <div class="logo"></div>
+        <h1>Lista de Etiquetas</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a class="nav-link activo" href="index.html">Estructurales</a></li>
+            <li><a class="nav-link activo" href="Multimedia.html">Multimedia</a></li>
+            <li><a class="nav-link activo" href="Control.html">Control</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenedor_principal">
+        <!--Estructura de la tabla-->
+        <table>
+            <caption>Etiquetas Control</caption>
+            <thead> <!-- Cabecera de la tabla <thead> -->
+                <tr> <!-- Fila de la tabla en la cabecera <tr> -->
+                    <th>Etiquetas</th> <!-- Columna de la tabla en la cabecera <th> -->
+                    <th>Descripcion</th>
+                    <th>Propiedades</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <br>
+            
+            <tbody> <!-- Cuerpo de la tabla <tbody> -->
+                <tr> 
+                    <td>< button></td>
+                    <td>
+                     En esta etiqueta se trata de la creacion de un boton interactivo en base al desarrollo de una pagina web 
+                      por ende dicho boton interactivo podria llegar a tener 
+                      algun tipo de informacion, texto, palabra,etc.
+                    </td>
+                    <td>
+                     <strong>disable:</strong>atributo booleano que desactiva el boton haciendolo nada interactivo<br>
+                     <strong>form:</strong>se logra asociar el boton con un formulario requerido<br>
+                    </td>
+                    <td>
+                     <button type="button" onclick="alert('Hello world!')">Pulsar el boton!</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< command></td>
+                    <td>
+                        Esta etiqueta se utiliza para definir un botón command que un usuario puede invocar ya sea un boton, una casilla de verificacion o elemento del menu.
+                    </td>
+                    <td>
+                        <strong>type:</strong> Especifica el tipo de comando.<br>
+                        <strong>label:</strong> Define el texto del comando.<br>
+                        <strong>icon:</strong> URL de un icono para el comando.<br>
+                        <strong>disabled:</strong> Desactiva el comando.<br>
+                        <strong>checked:</strong> indica si esta marcado (para checkbox o radio).
+                    </td>
+                    <td>
+                       <button onclick="savefile()">Guardar</button>
+                        <label>
+                         <input type="checkbox" checked> Habilitar edicion
+                        </label>
+
+                        <script>
+                         function savefile() {
+                            alert("Archivo Guardado")
+                         }
+                       </script>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< datalist></td>
+                    <td>
+                        Se utiliza para especificar en un input una lista pre definida de opciones. 
+                    </td>
+                    <td>
+                        <strong>id:</strong> Asocia la lista con un campo de entrada.<br>
+                        <strong>option:</strong> Define cada una de las opciones dentro de la lista.
+                    </td>
+                    <td>
+                        <form action="/action_page.php" method="get">
+                            <label for="browser">Elija su navegador de la lista:</label>
+                            <input list="browsers" name="browser" id="browser">
+                            <datalist id="browsers">
+                              <option value="Edge">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                            <input type="submit">
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< dialog></td>
+                    <td>
+                        Se utiliza para definir una caja o ventana de dialogo. 
+                    </td>
+                    <td>
+                        <strong>open:</strong> Muestra el cuadro de dialogo.<br>
+                        <strong>returnvalue:</strong> Establece o recupera el valor de retorno al cerrar el dialogo.
+                    </td>
+                    <td>
+                        <dialog id="myDialog">
+                            <p>Este es un cuadro de diálogo.</p>
+                            <button onclick="document.getElementById('myDialog').close()">Cerrar</button>
+                        </dialog>
+                        <button onclick="document.getElementById('myDialog').showModal()">Abrir diálogo</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< fieldset></td>
+                    <td>
+                        Se utiliza para agrupar controles relacionados dentro de un formulario HTML, proporcionando una estructura lógica y visual. 
+                    </td>
+                    <td>
+                        <strong>disable:</strong> Desactiva todos los controles dentro del grupo.<br>
+                        <strong>form:</strong> Asocia el < fieldset> como un formulario especifico.<br>
+                        <strong>name:</strong> Nombre del < fieldset>.
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <fieldset>
+                             <legend>Personal:</legend>
+                             <label for="fname">Nombre:</label>
+                             <input type="text" id="fname" name="fname"><br><br>
+                             <label for="lname">Apellidos:</label>
+                             <input type="text" id="lname" name="lname"><br><br>
+                             <label for="email">Email:</label>
+                             <input type="email" id="email" name="email"><br><br>
+                             <label for="birthday">Fecha de nacimiento:</label>
+                             <input type="date" id="birthday" name="birthday"><br><br>
+                             <input type="submit" value="Subir">
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< form></td>
+                    <td>
+                        Se utiliza para crear un formulario en HTML que recoge datos ingresados por el usuario. 
+                    </td>
+                    <td>
+                        
+                        <strong>action:</strong> URL a la que se envian los datos del formulario.<br>
+                        <strong>method:</strong> Metodo HTTP (GET, POST) para enviar datos.<br>
+                        <strong>enctype:</strong> Tipo de codificacion de los datos.<br>
+                        <strong>autocomplete:</strong> Si se debe autocompletar los campos (on, off).<br>
+                        <strong>novalidate:</strong> Desactiva la validacion del formulario.
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <label for="fname">Nombre:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Apellidos:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                        <p>Haga clic en el botón "Enviar" y los datos del formulario se enviarán a una página en el servidor llamado "action_page.php".</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< input></td>
+                    <td>
+                        Se utiliza para crear diferentes tipos de campos de entrada en un formulario web. Es un elemento vacío, por lo que no tiene una etiqueta de cierre.
+                    </td>
+                    <td>
+                        <strong>type:</strong> Especifica el tipo de campo de entrada.<br>
+                        <strong>name:</strong> Define el nombre del campo.<br>
+                        <strong>value:</strong> Establece el valor inicial.<br>
+                        <strong>placeholder:</strong> Texto de ayuda que aparece en el campo.<br>
+                        <strong>required:</strong> Campo obligatorio.<br>
+                        <strong>disabled:</strong> Desactiva el campo.<br>
+                        <strong>readonly:</strong> Solo lectura.
+                    </td>
+                    <td>
+                        <input type="email" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< keygen></td>
+                    <td>
+                        Se utiliza para generar un par de claves criptográficas (pública y privada) y permite al usuario enviar la clave pública junto con un formulario.
+                    </td>
+                    <td>
+                        <strong>name:</strong> Asocia la clave publica con un nombre en el formulario.<br>
+                        <strong>challenge:</strong> Incluye un desafio en la generacion de claves.<br>
+                        <strong>keytype:</strong> Define el tipo de algoritmo criptografico (como RSA).<br>
+                        <strong>autofocus:</strong> Enfoca el campo automaticamente.<br>
+                        <strong>disabled:</strong> Desactiva el campo.<br>
+                        <strong>form:</strong> Asocia el campo con un formulario especifico.
+                    </td>
+                    <td>
+                        <form action="/submit">
+                            <label for="security">Generar clave de seguridad:</label>
+                            <keygen name="security" keytype="RSA">
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< label></td>
+                    <td>
+                        Se utiliza para definir etiquetas asociadas a elementos de formulario. 
+                    </td>
+                    <td>
+                        <strong>for:</strong> Asocia la etiqueta con el elemento de formulario especificado por su id.<br>
+                        <strong>form:</strong> Asocia la etiqueta con un formulario especifico.<br>
+                        <strong>contenido:</strong> Puede contener texto o elementos en linea.
+                    </td>
+                    <td>
+                        <form action="/submit">
+                            <label for="username">Nombre de usuario:</label>
+                            <input type="text" id="username" name="username">
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< legend></td>
+                    <td>
+                        Es utilizada dentro de un formulario, en combinación con < fieldset>, para proporcionar un título o descripción para un grupo de controles de formulario, lo que ayuda a organizar y describir conjuntos de controles relacionados.
+                    </td>
+                    <td>
+                        <strong>contenido:</strong> Texto o elemento en linea.<br>
+                        <strong>Atributos globales:</strong> Soporta atributos como class, id, style.
+                    </td>
+                    <td>
+                        <form action="/submit">
+                            <fieldset>
+                              <legend>Información personal</legend>
+                              <label for="name">Nombre:</label>
+                              <input type="text" id="name" name="name"><br>
+                              <label for="age">Edad:</label>
+                              <input type="number" id="age" name="age">
+                            </fieldset>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< meter></td>
+                    <td>
+                        Se utiliza para representar un valor escalar dentro de un rango conocido. Es útil para mostrar mediciones como la capacidad de una batería, el uso de almacenamiento, la puntuación de un examen, entre otros.
+                    </td>
+                    <td>
+                        <strong>min:</strong> Define el valor minimo del rango (por defecto 0).<br>
+                        <strong>max:</strong> Define el valor maximo del rango (por defecto 1).<br>
+                        <strong>value:</strong> El valor actual a mostar en el medidor.<br>
+                        <strong>low:</strong> Define el valor considerado bajo.<br>
+                        <strong>high:</strong> Define el valor considerado alto.<br>
+                        <strong>optimum:</strong> El valor optimo dentro del rango.
+                    </td>
+                    <td>
+                        <label for="disk_c">Uso de disco C:</label>
+                        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+                        <label for="disk_d">Uso de disco D:</label>
+                        <meter id="disk_d" value="0.6">60%</meter>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< optgroup></td>
+                    <td>
+                        Se utiliza para agrupar opciones relacionadas dentro de un menú desplegable < select>. Esto permite organizar mejor las opciones cuando hay muchas, ayudando al usuario a navegar y seleccionar una opción.
+                    </td>
+                    <td>
+                        <strong>label:</strong> Nombre visible del grupo de opciones.<br>
+                        <strong>disabled:</strong> Desactiva todas las opciones dentro del grupo.
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <label for="cars">Elige un auto:</label>
+                            <select name="cars" id="cars">
+                                <optgroup label="Swedish Cars">
+                                 <option value="volvo">Volvo</option>
+                                 <option value="saab">Saab</option>
+                                </optgroup>
+                                <optgroup label="German Cars">
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </optgroup>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< option></td>
+                    <td>
+                        Se utiliza dentro de un elemento < select> o < datalist> para definir una opción que el usuario puede seleccionar. Es parte integral de la creación de listas desplegables en formularios.
+                    </td>
+                    <td>
+                        <strong>value:</strong> Define el valor que se enviará con el formulario si se selecciona esta opción.<br>
+                        <strong>selected:</strong> Indica que esta opción es la seleccionada por defecto.<br>
+                        <strong>disabled:</strong> Desactiva la opción, haciendo que no se pueda seleccionar.<br>
+                        <strong>label:</strong> Define un texto corto alternativo para la opción.
+                    </td>
+                    <td>
+                        <select>
+                            <option value="manzana">Manzana</option>
+                            <option value="naranja" selected>Naranja</option>
+                            <option value="pera">Pera</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< output></td>
+                    <td>
+                        Se utiliza para mostrar los resultados de un cálculo o la respuesta a una acción del usuario en un formulario.
+                    </td>
+                    <td>
+                        <strong>for:</strong> Especifica los elementos asociados cuyo valor afecta al resultado.<br>
+                        <strong>form:</strong> Asocia el elemento < output> con un formulario especifico.<br>
+                        <strong>name:</strong> Define un nombre para el valor del resultado.
+                    </td>
+                    <td>
+                        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                            <input type="range" id="a" value="50">
+                            +<input type="number" id="b" value="25">
+                            =<output name="x" for="a b"></output>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< progress></td>
+                    <td>
+                        Se utiliza para mostrar el progreso de una tarea que está en curso.
+                    </td>
+                    <td>
+                        <strong>value:</strong> Define el valor actual del progreso.<br>
+                        <strong>max:</strong> Define el valor maximo de progreso.<br>
+                        <strong>label:</strong> Atributo aria que proporciona una descripcion accesible.
+                    </td>
+                    <td>
+                        <label for="file">Proceso de descarga:</label>
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><;script>;</td>
+                    <td>
+                        Se utiliza para incluir y/o ejecutar código JavaScript en un documento HTML. Puede ser utilizada para agregar scripts internos dentro de la propia página o para enlazar scripts externos.
+                    </td>
+                    <td>
+                        <em>src:</em> URL del archivo de script externo.<br>
+                        <em>async:</em> Ejecuta el script de forma asincrona.<br>
+                        <em>defer:</em> Ejecuta el script después de que la página se haya analizado.<br>
+                        <em>type:</em> Tipo de script.<br>
+                        <em>crossorigin:</em> Gestión de solicitudes de recursos desde otros orígenes.<br>
+                        <em>integrity:</em> Verificacion de integridad del script.
+                    </td>
+                    <td>
+                        <body>
+
+                            <h1>Bienvenido a la parte de la estructura de control</h1>
+                            
+                            <script>
+                                alert("¡Bienvenido a la parte de la estructura de control!");
+                            </script>
+                        </body>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< select></td>
+                    <td>
+                        Se utiliza para crea un menú desplegable en un formulario, permitiendo que el usuario seleccione una opción de una lista de opciones.
+                    </td>
+                    <td>
+                        <strong>name:</strong> Especifica el nombre del control, que se envía junto con los datos del formulario.<br>
+                        <strong>id:</strong> Asigna un identificador único al elemento, útil para asociarlo con etiquetas < label> o para manipulación con JavaScript y CSS.<br>
+                        <strong>multiple:</strong> Permite seleccionar múltiples opciones. Si está presente, el usuario puede elegir más de una opción en la lista.<br>
+                        <strong>size:</strong> Define el número de opciones visibles en la lista sin necesidad de desplazarse.<br>
+                        <strong>required:</strong> Indica que el menú debe tener una opción seleccionada antes de enviar el formulario.
+                    </td>
+                    <td>
+                        <select name="frutas" id="frutas">
+                            <option value="manzana">Manzana</option>
+                            <option value="banana">Banana</option>
+                            <option value="cereza">Cereza</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>< textarea></td>
+                    <td>
+                        Se utiliza para crear un área de entrada de texto que permite a los usuarios escribir múltiples líneas de texto. 
+                    </td>
+                    <td>
+                        <strong>cols:</strong> Define el número de columnas (ancho) del área de texto.<br>
+                        <strong>rows:</strong> Define el número de filas (altura) del área de texto.<br>
+                        <strong>placeholder:</strong> Muestra un texto de sugerencia dentro del área de texto cuando está vacío.<br>
+                        <strong>maxlength:</strong> Establece el número máximo de caracteres que se pueden ingresar.<br>
+                        <strong>readonly:</strong> Hace que el área de texto sea de solo lectura, impidiendo su modificación.<br>
+                        <strong>disabled:</strong> Desactiva el área de texto, impidiendo que se interactúe con ella.<br>
+                        <strong>required:</strong> Indica que el campo es obligatorio y debe ser llenado antes de enviar el formulario.<br>
+                        <strong>wrap:</strong> Especifica cómo el texto debe ajustarse cuando se envía al servidor.<br>
+                        <strong>class:</strong> Asigna una o más clases CSS para aplicar estilos específicos al área de texto.<br>
+                        <strong>id:</strong> Asigna un identificador único al elemento para su selección y manipulación con CSS o JavaScript.<br>
+                        <strong>style:</strong> Permite definir estilos en línea para personalizar la apariencia del área de texto.
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <p><label for="w3review">Reseña:</label></p>
+                            <textarea id="w3review" name="w3review" rows="4" cols="50">Se podra colocar cualquier informacion necesaria.</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Finaliza-->
+    </div>
+
+    <footer id="fprincipal">
+        <div>Copyright © 2024 Andres Perez</div>   
+    </footer>
+  </main>  
+</body>
+</html>

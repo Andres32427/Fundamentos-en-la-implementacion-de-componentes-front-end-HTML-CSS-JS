@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lista de Etiquetas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tema.css">"
+</head>
+
+<body>
+    <main>
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de Etiquetas</h1>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a class="nav-link activo" href="index.html">Estructurales</a></li>
+                <li><a class="nav-link activo" href="Multimedia.html">Multimedia</a></li>
+                <li><a class="nav-link activo" href="Control.html">Control</a></li>
+            </ul>
+        </nav>
+
+        <div id="contenedor_principal">
+            <!--Estructura de la tabla-->
+            <table>
+                <caption>Etiquetas Multimedia</caption>
+                <thead> <!-- Cabecera de la tabla <thead> -->
+                    <tr> <!-- Fila de la tabla en la cabecera <tr> -->
+                        <th>Etiquetas</th> <!-- Columna de la tabla en la cabecera <th> -->
+                        <th>Descripcion</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <br>
+
+                <tbody> <!-- Cuerpo de la tabla <tbody> -->
+                    <tr> <!--Estructura para representar filas <tr> (n-repeat) -->
+                        <td>
+                            < audio controls>
+                        </td>
+                        <td>
+                            <p>
+                                Before HTML5, audio files could only be played in a browser with
+                                a plug-in (likes flash).The HTML5 <b>
+                                    < audio>
+                                </b> element
+                                specifies a standard way to embed audio in a web page.
+                            </p>
+                        </td>
+                        <td>
+                            <p><b>autoplay:</b>Un atributo booleano; si se especifica</p>
+                            <p><b>autobuffer:</b>Un atributo booleano; si se especifica, el.</p>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="assets/horse.ogg" type="audio/ogg">
+                                <source src="assets/horse.mp3" type="audio/mpg">
+                                your browser does not support the audio element.
+                            </audio>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < area>
+                        </td>
+                        <td> Se utiliza dentro de un mapa de imagen para poder definir
+                            regiones en especificas en una imagen que son clicable.
+                        </td>
+                        <td>
+                            <strong>alt:</strong> Este proporciona un texto alternativo en el area.<br>
+                            <strong>coords:</strong> Define las coordenadas de la region clicable dentro de la
+                            imagen.<br>
+                            <strong>shape:</strong> Esta especifica la forma de la region clicable (rect, circle, poly,
+                            default).<br>
+                            <strong>href:</strong> Especifica la URL a la que se dirigira el usuario.<br>
+                            <strong>target:</strong> Se define donde se abrira el enlace.<br>
+                            <strong>rel:</strong> Define la relacion entre el documento actual y el documento enlazado.
+                        </td>
+                        <td>
+                            <p>Haga click en el portatil, el telefono o la taza de cafe para ir a una nueva
+                                pagina y poder leer mas sobre el tema:</p>
+                            <img src="assets/workplace.PNG" alt="workplace" usemap="#workmap" width="400" height="379">
+                            <map name="workmap">
+                                <area shape="rect" coords="34,44,270,350" alt="computer" href="computer.htm">
+                                <area shape="rect" coords="290,172,333,250" alt="phone" href="phone.htm">
+                                <area shape="circle" coords="337,300,44" alt="cup of coffee" href="coffee.htm">
+                            </map>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < canvas>
+                        </td>
+                        <td>
+                            Se utiliza para dibujar gráficos, por script, en el aire. (con JavaScript).
+                        </td>
+                        <td>
+                            <strong>width:</strong> Especifica el ancho del area de dibujo en pixeles. valor por
+                            defecto: 300px.<br>
+                            <strong>height:</strong> Especifica la altura del area de dibujo en pixeles. valor por
+                            defecto: 150px.<br>
+                            <strong>id:</strong> Define un identificador unico para el elemento.<br>
+                            <strong>class:</strong> Permite asignar clases CSS.<br>
+                            <strong>style:</strong> Permite aplicar estilos CSS directamente.
+                        </td>
+                        <td>
+
+                            <body>
+                                <h1>Mi Dibujando en Canvas</h1>
+                                <canvas id="miCanvas" width="400" height="300"
+                                    style="border:1px solid #000000;"></canvas>
+
+                                <script>
+                                    var canvas = document.getElementById("miCanvas");
+                                    var ctx = canvas.getContext("2d");
+
+                                    ctx.fillStyle = "#007BFF";
+                                    ctx.fillRect(50, 50, 200, 100);
+
+                                    ctx.strokeStyle = "#FF0000";
+                                    ctx.lineWidth = 5;
+                                    ctx.strokeRect(50, 50, 200, 100);
+
+                                    ctx.beginPath();
+                                    ctx.arc(300, 150, 50, 0, 2 * Math.PI);
+                                    ctx.fillStyle = "#FFFF00";
+                                    ctx.fill();
+                                    ctx.stroke();
+                                </script>
+                            </body>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < embed>
+                        </td>
+                        <td>
+                            Se utiliza para insertar contenido multimedia o aplicaciones externas dentro de una página
+                            web.
+                        </td>
+                        <td>
+                            <strong>src:</strong> URL del recurso multimedia.<br>
+                            <strong>type:</strong> tipo MIME del recurso.<br>
+                            <strong>width:</strong> Ancho del contenido incrustado.<br>
+                            <strong>height:</strong> Alto del contenido incrustado.
+                        </td>
+                        <td>
+                            <embed type="video/webm" src="assets/movie.MP4" width="400" height="300">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < iframe>
+                        </td>
+                        <td>
+                            Se utiliza para incrustar otro documento HTML dentro del documento actual, permitiendo la
+                            visualizacion del contenido externo como videos, mapas, o páginas web completas en un marco
+                            dentro de la página.
+                        </td>
+                        <td>
+                            <strong>src:</strong> Define la URL del documento a incrustar.<br>
+                            <strong>width:</strong> Especifica el ancho del iframe.<br>
+                            <strong>height:</strong> Especifica la altura del iframe.<br>
+                            <strong>frameborder:</strong> Controla la visibilidad del borde.<br>
+                            <strong>allow:</strong> permite ciertas funcionalidades como fullscreen.<br>
+                            <strong>sandbox:</strong> Aplica restricciones de seguridad.
+                        </td>
+                        <td>
+
+                            <body>
+                                <h1>Incrustando una Página Web</h1>
+                                <iframe src="https://www.wikipedia.org" width="600" height="400"
+                                    style="border:1px solid #000;">
+                                    Tu navegador no soporta iframes.
+                                </iframe>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < img>
+                        </td>
+                        <td>
+                            Se utiliza para incrustar imágenes en una página web. Es fundamental para añadir elementos
+                            visuales al contenido.
+                        </td>
+                        <td>
+                            <strong>src:</strong> Define la URL de la imagen.<br>
+                            <strong>alt:</strong> Proporciona texto alternativo.<br>
+                            <strong>width:</strong> Especifica el ancho de la imagen.<br>
+                            <strong>height:</strong> Especifica la altura de la imagen.<br>
+                            <strong>title:</strong> Informacion adicional visible al pasar el cursor.<br>
+                            <strong>loading:</strong> Controla la carga de la imagen (lazy, eager).
+                        </td>
+                        <td>
+                            <img src="assets/img.PNG" alt="Imagen" width="500" height="600">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < map>
+                        </td>
+                        <td>
+                            Se define un mapa de imagen, que es una imagen con áreas interactivas. Cada área dentro del
+                            mapa de imagen se define con la etiqueta < area>, que puede ser un enlace o un elemento
+                                interactivo.
+                        </td>
+                        <td>
+                            <strong>name:</strong> Define el nombre del mapa de imagen, usado para asociar con la imagen
+                            mediante el atributo < usemap>
+                        </td>
+                        <td>
+                            <img src="assets/imagen 3.PNG" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+                            <map name="planetmap">
+                                <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+                                <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+                                <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+                            </map>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< object></td>
+                        <td>
+                            Se utiliza para incrustar un recurso externo, como un video, una imagen, un documento o una aplicación. 
+                        </td>
+                        <td>
+                            <strong>data:</strong> URL del recurso a incrustar.<br>
+                            <strong>type:</strong>  Tipo de contenido del recurso.<br>
+                            <strong>width:</strong> Ancho del objeto.<br>
+                            <strong>height:</strong> Altura del objeto.<br>
+                            <strong>name:</strong> Nombre del objeto.<br>
+                            <strong>form:</strong> Formulario al que pertenece el objeto.<br>
+                            <strong>usemap:</strong> Asocia un mapa de imagen.<br>
+                            Atributos Globales: Como id, class, style, etc.
+                        </td>
+                        <td>
+                            <object data="assets/img 4.PNG" width="300" height="200"></object>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< param></td>
+                        <td>
+                            se utiliza dentro de la etiqueta < object> para definir parámetros que afectan el comportamiento o la visualización del objeto incrustado.
+                        </td>
+                        <td>
+                            <strong>name:</strong> Define el nombre del parametro.<br>
+                            <strong>value:</strong> Especifica el valor del parametro.<br>
+                        </td>
+                        <td>
+                            <object data="assets/Ambiente de Futbol.mp3">
+                                <param name="autoplay" value="true">
+                            </object>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< source></td>
+                        <td>
+                            Se utiliza para especificar uno de los posibles recursos de medios que se puede reproducir con un elemento < audio>, < video>, o < picture>. 
+                        </td>
+                        <td>
+                            <strong>src:</strong> Especifica la URL del archivo multimedia.<br>
+                            <strong>type:</strong> Define el tipo de medio o formato del archivo.<br>
+                            <strong>media:</strong> Un atributo opcional que define las condiciones bajo las cuales se utiliza el recurso. Funciona como una consulta de medios CSS.
+                        </td>
+                        <td>
+                            <video width="320" height="240" controls>
+                                <source src="assets/Audio naturaleza.mp3" type="video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< track></td>
+                        <td>
+                            Se utiliza para proporcionar pistas de texto (como subtítulos, descripciones de audio, o capítulos) para contenido multimedia.
+                        </td>
+                        <td>
+                            <strong>src:</strong> URL de la pista de texto.<br>
+                            <strong>kind:</strong> Tipo de pista (subtitulos).<br>
+                            <strong>srclang:</strong> Idioma de la pista.<br>
+                            <strong>label:</strong> Titulo de la pista.<br>
+                            <strong>default:</strong> Define si esta pista es la predeterminada.
+                        </td>
+                        <td>
+                            <video width="600" controls>
+                                <source src="assets/Video.mp4" type="video/mp4">
+                                <track src="subtitulos_es.vtt" kind="subtitles" srclang="es" label="Español">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< video></td>
+                        <td>
+                            Se utiliza para incrustar videos en documentos HTML. Esta etiqueta permite incluir múltiples fuentes de video, proporcionando soporte para diferentes formatos y navegadores. 
+                        </td>
+                        <td>
+                            <strong>src:</strong> Especifica la URL del archivo de video.<br>
+                            <strong>controls:</strong> Muestra los controles del video como play, pausa, etc.<br>
+                            <strong>autoplay:</strong> El video comienza a reproducirse automáticamente cuando se carga la página.<br>
+                            <strong>loop:</strong> Hace que el video se repita después de que finaliza.<br>
+                            <strong>muted:</strong> El video se reproduce sin sonido.<br>
+                            <strong>poster:</strong> Especifica una imagen que se muestra mientras se carga el video o hasta que el usuario lo reproduce.<br>
+                            <strong>width:</strong> Especifica el ancho.<br>
+                            <strong>height:</strong> Especifica la altura.<br>
+                        </td>
+                        <td>
+                            <video width="320" height="240" controls>
+                                <source src="assets/Video 2.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Finaliza-->
+        </div>
+
+        <footer id="fprincipal">
+            <div>Copyright © 2024 Andres Perez</div>
+        </footer>
+    </main>
+</body>
+
+</html>

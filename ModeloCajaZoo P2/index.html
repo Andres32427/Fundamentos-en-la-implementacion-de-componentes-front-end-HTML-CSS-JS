@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="CSS/pie_de_pagina.css" rel="stylesheet" media="screen" />
+        <link href="CSS/columns.css" rel="stylesheet" media="screen" />
+        <link href="CSS/banner_medio.css" rel="stylesheet" media="screen" />
+        <link href="CSS/cabecera_galeria.css" rel="stylesheet" media="screen" />
+        <link href="CSS/nav.css" rel="stylesheet" media="screen" />
+        <link href="CSS/layout.css" rel="stylesheet" media="screen" />
+        <meta charset="ISO-639"/>
+        <meta name="author" content="Andres Perez">
+        <meta name="description" content="Modelo de caja - zoologico sao paulo">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <title>Zoologico Sao Paulo</title>
+    </head>
+    <body>
+        <nav id="nav_principal">
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li><a href="#">zoologico</a></li>
+                <li><a href="#">Visitantes</a></li>
+                <li><a href="#">Ingresos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="div_clear_both"></div>
+        </nav>
+        <div id="contenedor_principal">
+            <header id="header_principal">
+                <div class="logo"></div>
+                <form action="#">
+                    <label>Newsletter</label>
+                    <input type="text" placeholder="insira seu email"/>
+                    <button>ok</button>
+                </form>
+            </header>
+
+            <div id="galeria">
+                <!--Se repite 10 veces este codigo-->
+                <figure>
+                    <img alt="imagen" src="assets/lobo.png" />
+                    <figcaption>Lobo Guara</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/elefante.png" />
+                    <figcaption>Elefante</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/mico.png" />
+                    <figcaption>Mico Leão</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/mariposa.png" />
+                    <figcaption>Borboleta</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/leon.png" />
+                    <figcaption>Leão</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/cobra.png" />
+                    <figcaption>Cobra</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/gorila.png" />
+                    <figcaption>Gorila</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/tortuga.png" />
+                    <figcaption>Tartaruga</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/tucan.png" />
+                    <figcaption>Tucano</figcaption>
+                </figure>
+                <figure>
+                    <img alt="imagen" src="assets/galeria.png" />
+                    <figcaption>Galeria</figcaption>
+                </figure>
+            </div>
+            <div class="div_clear_both"></div>
+
+            <aside id="banner">
+                <h1 class="text text1">Evento Especial:</h1>
+                <h2 class="text text2">venha trilhar o caminho da serpente - A maior exposição de serpentes</h2>
+            </aside>
+
+            <section class="col" id="noticias">
+                <header>
+                    <h2>Noticias</h2>
+                </header>
+                <!-- Se repite 3 veces este codigo -->
+                <article>
+                    <header><h3>Janeiro</h3></header>
+                    <p>
+                        Inauguração da exposição "O Caminho da Serpente"... [+]
+                    </p>
+                </article>
+                <article>
+                    <header><h3>Feveiro</h3></header>
+                    <p>
+                        A incidência da doença em animais do zoológico de São Paulo começou a chamar a atenção dos veterinários... [+]
+                    </p>
+                </article>
+                <article>
+                    <header><h3>Março</h3></header>
+                    <p>
+                        De 28 a 31 de março, VII Fórum Brasileiro de Educação Ambiental... [+]
+                    </p>
+                </article>
+            </section>
+            
+            <section class="col" id="animal_mes">
+                <header>
+                    <h2>Bicho do Mês</h2>
+                </header>
+                <img title="Animal del mes" alt="Animal del mes" src="assets/animal_mes.png" />
+                <p>
+                    As corujas são aves predadoras, se alimentam de outros animais, vertebrados ou invertebrados. 
+                    Possuem bicos curvos e garras fortes com unhas afiadas, que servem para capturar as presas. [+]
+                </p>
+            </section>
+           
+            <section class="col" id="redes_sociales">
+                <header><h2>Redes Sociais</h2></header>
+                <ul>
+                    <li class="red_email">
+                        <a href="#"><div class="icon icon1"></div><div>Email</div></a>
+                    </li>
+                    <li class="red_Facebook">
+                        <a href="#"><div class="icon icon2"></div><div>Facebook</div></a>
+                    </li>
+                    <li class="red_Twitter">
+                        <a href="#"><div class="icon icon3"></div><div>Twitter</div></a>
+                    </li>
+                    <li class="red_rss">
+                        <a href="#"><div class="icon icon4"></div><div>Feed RSS</div></a>
+                    </li>
+                </ul>
+            </section>
+           
+            <aside id="pinguino"></aside>
+        </div>
+        <footer id="footer_principal">
+            <section class="content_principal">
+                <div class="logo"></div>
+                <address>
+                    Avenida Miguel Estéfano, 4241 - Água Funda
+                    <br>
+                    Fone: (11) 5073-0811 / Fax: (11) 5058-0564
+                    <br>
+                    Fundação Parque Zoológico de São Paulo
+                </address>
+                <blockquote>
+                    <p>
+                        "Apenas aquele que conhece verdadeiramente os 
+                        animais é capaz de compreender plenamente o caráter único do homem."
+                        <br>
+                    </p>
+                    <h3>Konrad Lorenz</h3>
+                </blockquote>
+                <div class="linea"></div>
+                <small>
+                    Zoológico de São Paulo © 2012.
+                </small>
+            </section>
+        </footer>
+    </body>
+</html>

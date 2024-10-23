@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lista de Etiquetas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tema.css">"
+</head>
+
+<body>
+    <main>
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de Etiquetas</h1>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a class="nav-link activo" href="index.html">Estructurales</a></li>
+                <li><a class="nav-link activo" href="Multimedia.html">Multimedia</a></li>
+                <li><a class="nav-link activo" href="Control.html">Control</a></li>
+            </ul>
+        </nav>
+
+        <div id="contenedor_principal">
+            <!--Estructura de la tabla-->
+            <table>
+                <caption>Etiquetas Estructurales</caption>
+                <thead> <!-- Cabecera de la tabla <thead> -->
+                    <tr> <!-- Fila de la tabla en la cabecera <tr> -->
+                        <th>Etiquetas</th> <!-- Columna de la tabla en la cabecera <th> -->
+                        <th>Descripcion</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <br>
+
+                <tbody> <!-- Cuerpo de la tabla <tbody> -->
+                    <tr> <!--Estructura para representar filas <tr> (n-repeat) -->
+                        <td>
+                            < a>
+                        </td> <!-- Estructura para representar columnas <td> -->
+                        <td>Link </td>
+                        <td>Propiedades href</td>
+                        <td>....</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < dic>
+                        </td>
+                        <td>div </td>
+                        <td>Propiedades id</td>
+                        <td>.....</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < !--...-->
+                        </td>
+                        <td>
+                            La Etiqueta del comentario se llega a utilizar para Definir comentarios dentro del codigo
+                            HTML.
+                        </td>
+                        <td>No aplica ya que es una etiqueta de comentarios y no tiene ni atributos o propiedades</td>
+                        <td>
+                            <!-- This is a comment-->
+                            <p>Escriba su Comentario.</p>
+                            <!-- Comments are not displayed in the browser-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < !DOCTYPE>
+                        </td>
+                        <td>
+                            Se utiliza para definir el tipo de documento y la version de HTML que se este utilizando en
+                            el codigo.
+                        </td>
+                        <td>No tiene atributos o propiedades pero puede tener diferentes versiones dependiendo el
+                            estandar de HTML.</td>
+                        <td>
+                            <title>title of the document</title>
+
+                            <body>
+                                Contenido del Documento
+                            </body>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < abbr>
+                        </td>
+                        <td>
+                            Se utiliza para la Representacion de una abreviatura o un acronimo.
+                        </td>
+                        <td>tittle.Este atributo opcional proporciona la expansion completa o la descripcion de la
+                            abreviatura o acronimo.</td>
+                        <td>
+                            La <abbr title="Organizacion mundial de la salud">OMS </abbr>Creada en el 1948.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < address>
+                        </td>
+                        <td>
+                            Se utiliza para contener informacion de contacto de un autor o propietario de un documento o
+                            articulo.
+                        </td>
+                        <td>No tiene atributos especificos, pero puede contener textos y otros elementos en linea
+                            como < a> , < br> , etc. </td>
+                        <td>
+                            <address>
+                                written by <a href="maito:webmaster@example.com">Andres Perez</a>.<br>
+                                visit us at:<br>
+                                example.com<br>
+                                box 564, Sucre<br>
+                                Colombia
+                            </address>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < article>
+                        </td>
+                        <td>
+                            Se utiliza para definir un articulo que puede ser distribuido de manera independiente o
+                            reutilizado,
+                            como articulo de noticias, blog, comentarios, etc.
+                        </td>
+                        <td>No tiene atributos especificos, pero se puede contener cualquier contenido HTML valido.</td>
+                        <td>
+                            <article>
+                                <h2>Google Chrome</h2>
+                                <p>Google Chrome es un navegador web desarrollado por Google, lanzado en 2008.
+                                    Chrome es el navegador web mas popular del mundo en la actualidad.!
+                                </p>
+                            </article>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < aside>
+                        </td>
+                        <td>
+                            Se utiliza para definir un contenido adicional o complementario que se relaciona
+                            indirectamente al
+                            contenido pricipal definiendo el contenido lateral del contenido de una pagina.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Define una o mas clases para el estilo CSS.<br>
+                            <strong>id:</strong> Un identificador unico para la etiqueta.<br>
+                            <strong>style:</strong> Aplicar estilos en linea.
+                        </td>
+                        <td>
+                            <p>Mi Familia y yo visitamos el centro de Epcot este verano.¡el clima era agradable y Epcot
+                                fue increible!
+                                ¡pase un gran verano junto a mi familia!
+                            </p>
+                            <aside>
+                                <h4>Centro Epcot</h4>
+                                <p>Epcot es un parque temático en Walt Disney World Resort que cuenta con emocionantes
+                                    atracciones, pabellones internacionales, fuegos artificiales galardonados y
+                                    eventos especiales de temporada</p>
+                            </aside>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < b>
+                        </td>
+                        <td>
+                            Se utiliza para aplicar negrita al texto, dandole enfasis sin añadir importancia semantica
+                        </td>
+                        <td>
+                            <strong>class:</strong> Define una o mas clases para aplicar estilos CSS especificos.<br>
+                            <strong>id:</strong> Asigna un identificador unico al elemento.<br>
+                            <strong>style:</strong> Permite aplicar estilos en linea al texto.
+                        </td>
+                        <td>
+                            <p>Este es un texto normal - <b>y este es un texto en negrita.</b>.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < base>
+                        </td>
+                        <td>
+                            Se Utiliza para especificar la base donde se abriran todas las URL del documento.
+                        </td>
+                        <td>
+                            <strong>href:</strong> Especifica la URL base para todos los enlaces relativos del
+                            documento.<br>
+                            <strong>target:</strong> Define el destino predeterminado para los enlaces y formularios.
+                        </td>
+                        <td>
+
+                            <head>
+                                <base href="index.html">
+                            </head>
+
+                            <body>
+                                <img src="assets/paisaje.PNG" alt="Paisaje" width="300" height="200">
+                                <a href="index.html">Estructurales</a>
+                            </body>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < bdi>
+                        </td>
+                        <td>
+                            Se utiliza para aislar una parte del texto que puede tener un formato diferente del texto
+                            externo.
+                        </td>
+                        <td>
+                            <strong>dir:</strong> Atributo opcional que permite especificar la direccion del texto
+                            dentro del elemento.
+                        </td>
+                        <td>
+                            User <bdi>hrefs</bdi>: 60 points.<br>
+                            User <bdi>jdoe</bdi>: 80 points.<br>
+                            User <bdi>إيان</bdi>: 90 points.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < bdo>
+                        </td>
+                        <td>
+                            Se utiliza para sobreescribir la direccion del texto ya sea de izquierda a derecha o
+                            viceversa.
+                        </td>
+                        <td>
+                            <strong>dir:</strong> Atributo obligatorio que define la direccion del texto dentro del
+                            elemento. los valores posibles son <code>ltr</code> (izquierda a derecha) y <code>rtl</code>
+                            (derecha a izquierda).
+                        </td>
+                        <td>
+                            <p>Este párrafo irá de izquierda a derecha.</p>
+                            <p><bdo dir="rtl">Este parrafo ira de derecha a izquierda</bdo></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < blockquote>
+                        </td>
+                        <td>
+                            Se utiliza para definir una seccion que tiene otra fuente.
+                        </td>
+                        <td>
+                            <strong>cite:</strong> Atributo Opcional que especifica la URL de la fuente de la cita.
+                        </td>
+                        <td>
+                            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                                Durante 50 años, WWF ha estado protegiendo el futuro de la naturaleza. WWF, la
+                                organización conservacionista líder en el mundo, trabaja en 100 países y cuenta con el
+                                apoyo de 1,2 millones de miembros en los Estados Unidos y cerca de 5 millones en todo el
+                                mundo.
+                            </blockquote>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < body>
+                        </td>
+                        <td>
+                            Se Utiliza para definir el cuerpo del documento.
+                        </td>
+                        <td>
+                            <strong>onload:</strong> Define un script que se ejecuta cuando la pagina se ha cargado.<br>
+                            <strong>onunload:</strong> Define un script que se ejecuta cuando la pagina se esta
+                            descargando.<br>
+                            <strong>style:</strong> Permite aplicar estilos CSS directamente al cuerpo de la pagina.<br>
+                            <strong>class:</strong> Especifica una o mas clases CSS para el elemento.<br>
+                            <strong>id:</strong> Define un identificador unico para el elemento.<br>
+                            <strong>background:</strong> Define una imagen de fondo para la página.<br>
+                            <strong>bgcolor:</strong> Establece un color de fondo para la pagina.<br>
+                            <strong>text:</strong> Define el color del texto en la pagina.<br>
+                            <strong>link:</strong> Estable el color de los enlaces en la pagina.<br>
+                            <strong>vlink:</strong> Establece el color de los enlaces visitados.<br>
+                            <strong>alink:</strong> Establece el color de los enlaces activos.<br>
+                        </td>
+                        <td>
+                            <html>
+
+                            <head>
+                                <title>Titulo del documento</title>
+                            </head>
+
+                            <body>
+                                <h1>Encabezado del Documento</h1>
+                                <p>Parrafo del Documento</p>
+                            </body>
+
+                            </html>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < br>
+                        </td>
+                        <td>
+                            Se utiliza para Definir un salto de linea dentro del texto lo que permite que el contenido
+                            continue en la siguiente linea.
+                        </td>
+                        <td>
+                            Esta etiqueta no tiene atributos personalizados o propiedades; simplemente inserta un salto
+                            de linea en el texto.
+                        </td>
+                        <td>
+                            <p>Para Forzar<br> saltos de linea<br> en un texto,<br> utilice el<br> elemento.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < caption>
+                        </td>
+                        <td>
+                            Se Utiliza para definir el titulo de una tabla.
+                        </td>
+                        <td>
+                            Esta etiqueta No hay propiedades personalizada.
+                        </td>
+                        <td>
+                            <table>
+                                <caption>Ahorro mensual</caption>
+                                <tr>
+                                    <th>Mes </th>
+                                    <th>ahorros</th>
+                                </tr>
+                                <tr>
+                                    <td>Enero</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>Febrero</td>
+                                    <td>$50</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < cite>
+                        </td>
+                        <td>
+                            Se utiliza para definir el título de un trabajo.
+                        </td>
+                        <td>
+                            Esta etiqueta no tiene atributos específicos o propiedades adicionales. Sin embargo, se
+                            puede estilizar usando CSS como cualquier otro elemento de texto.
+                        </td>
+                        <td>
+                            <p><cite>Cien años de soledad. </cite> Gabriel Garcia Marquez. mayo de 1967.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < code>
+                        </td>
+                        <td>
+                            Se Utiliza para definir un trozo de código de programación.
+                        </td>
+                        <td>
+                            Esta etiqueta no tiene atributos específicos o propiedades adicionales. Se puede estilizar
+                            usando CSS como cualquier otro elemento de texto.
+                        </td>
+                        <td>
+                            <p>La Propiedad HTML <code>boton</code> define un botón en el que se puede hacer clic.</p>
+                            <p>La Propiedad CSS <code>background-color</code> define el color de fondo de un elemento.
+                            </p>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            < col>
+                        </td>
+                        <td>
+                            Esta etiqueta especifica las propiedades de la columna para cada columna del elemento.
+                        </td>
+                        <td>
+                            <strong>span:</strong> Especifica cuantas columna afecta.<br>
+                            <strong>class:</strong> Define una o mas clases CSS.<br>
+                            <strong>style:</strong> Aplica estilos CSS directamente.
+                        </td>
+                        <td>
+                            <table>
+                                <colgroup>
+                                    <col span="2" style="background-color:rgb(111, 255, 0)">
+                                    <col style="background-color:rgb(255, 145, 0)">
+                                </colgroup>
+                                <tr>
+                                    <th>ISBN</th>
+                                    <th>Tiulo</th>
+                                    <th>Precio</th>
+                                </tr>
+                                <tr>
+                                    <td>3476896</td>
+                                    <td>Mi primer HTML</td>
+                                    <td>$53</td>
+                                </tr>
+                                <tr>
+                                    <td>5869207</td>
+                                    <td>mi primer CSS</td>
+                                    <td>$49</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < colgroup>
+                        </td>
+                        <td>
+                            Esta etiqueta se utiliza para Especificar un grupo de una o más columnas de una tabla.
+                        </td>
+                        <td>
+                            <strong>span:</strong> Define el numero de columna en el grupo.<br>
+                            <strong>class:</strong> Aplica clases CSS al grupo.<br>
+                            <strong>style:</strong> Aplica estilos CSS directamente.
+                        </td>
+                        <td>
+                            <table>
+                                <colgroup>
+                                    <col span="2" style="background-color:rgb(200, 0, 255)">
+                                    <col style="background-color:rgb(0, 153, 255)">
+                                </colgroup>
+                                <tr>
+                                    <th>ISBN</th>
+                                    <th>Titulo</th>
+                                    <th>Precio</th>
+                                </tr>
+                                <tr>
+                                    <td>3476896</td>
+                                    <td>HTML</td>
+                                    <td>$25</td>
+                                </tr>
+                                <tr>
+                                    <td>5869207</td>
+                                    <td>CSS</td>
+                                    <td>$15</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < dd>
+                        </td>
+                        <td>
+                            Se utiliza para definir una descripción de un item en una lista de definición y ayuda a
+                            estructurar el contenido de manera semantica.
+                        </td>
+                        <td>
+                            No tiene atributos especificos adicionales, pero es importante que se use en cojunto con <
+                                dl> y < dt> para mantener la estructura correcta.
+                        </td>
+                        <td>
+                            <p>Estos tres elementos se utilizan para crear una lista de descripciones:</p>
+                            <dl>
+                                <dt>Cafe</dt>
+                                <dd>Bebida caliente negra</dd>
+                                <dt>leche</dt>
+                                <dd>Bebida fría blanca</dd>
+                            </dl>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < del>
+                        </td>
+                        <td>
+                            Se Utiliza para marcar un texto que ha sido eliminado de un documento este texto suele
+                            mostrarse con una línea que lo atraviesa.
+                        </td>
+                        <td>
+                            <strong>cite:</strong> URL que proporciona informacion sobre la eliminacion.<br>
+                            <strong>datetime:</strong> fecha y hora en formato ISO 8601 cuando se elimino el texto.
+                        </td>
+                        <td>
+                            <p>Mi color favorito es <del>Azul</del> <ins>rojo</ins>!</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < details>
+                        </td>
+                        <td>
+                            Se utiliza para definir detalles adicionales que el usuario puede ver o esconder.
+                        </td>
+                        <td>
+                            <strong>open:</strong> Un atributo booleano que, si esta presente, muestra el contenido al
+                            cargar la pagina.
+                        </td>
+                        <td>
+                            <details>
+                                <summary>Centro Epcot</summary>
+                                <p>Epcot es un parque temático en Walt Disney World Resort que cuenta con emocionantes
+                                    atracciones, pabellones internacionales, fuegos artificiales galardonados y eventos
+                                    especiales de temporada.</p>
+                            </details>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < dfn>
+                        </td>
+                        <td>
+                            Se utiliza para marcar un término que está siendo definido en el contenido.
+                        </td>
+                        <td>
+                            No tiene atributos específicos adicionales, pero se utiliza en conjunto con el contenido que
+                            está definiendo.
+                        </td>
+                        <td>
+                            <p><dfn>HTML</dfn> es el lenguaje de marcado estándar para crear páginas web.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < dl>
+                        </td>
+                        <td>
+                            Se Utiliza para definir una lista de definiciones que organiza pares de términos y
+                            descripciones en una estructura lógica y fácil de leer.
+                        </td>
+                        <td>
+                            No tiene propiedades o atributos especiales por si sola, pero se usa junto con < dt>
+                                (termino) y < dd> (definicion).
+                        </td>
+                        <td>
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>Lenguaje de marcado de hipertexto</dd>
+                                <dt>CSS</dt>
+                                <dd>Hojas de estilo en cascada</dd>
+                            </dl>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < dt>
+                        </td>
+                        <td>
+                            Define un término (un item) en una lista de definición.
+                        </td>
+                        <td>
+                            No tiene propiedades o atributos especiales. Se utiliza junto con < dl> y < dd> para formar
+                                    una lista de definiciones.
+                        </td>
+                        <td>
+                            <dl>
+                                <dt>Gaseosa</dt>
+                                <dd>Bebida azucarada negra </dd>
+                                <dt>H2OH</dt>
+                                <dd>Bebida con gas blanca</dd>
+                            </dl>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < em>
+                        </td>
+                        <td>
+                            Se utiliza para enfatizar texto dentro de un documento HTML
+                        </td>
+                        <td>
+                            No tiene propiedades o atributos especiales.
+                        </td>
+                        <td>
+                            <p>No te olvides de <em>enviar</em> el informe antes de las 5 PM.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < figcaption>
+                        </td>
+                        <td>
+                            Se utiliza para proporcionar una leyenda o descripción para un elemento < figure>.
+                        </td>
+                        <td>
+                            no tiene atributos en especificos que necesiten configuracion. simplemente se utiliza para
+                            encapsular el texto de la leyenda.
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="assets/Imagen Casa.PNG" alt="Casa" style="width:100%">
+                                <figcaption>Trulli, Puglia, Italy.</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < figure>
+                        </td>
+                        <td>
+                            Se utiliza para agrupar contenido autónomo, como imágenes, ilustraciones, diagramas,
+                            fragmentos de código o tablas, junto con una leyenda opcional proporcionada por <
+                                figcaption>.
+                        </td>
+                        <td>
+                            No posee atributos en especifico mas alla de los atributos globales que son comunes a todas
+                            las etiquetas HTML.
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="assets/Montañas.PNG" alt="Montañas" style="width:100%">
+                                <figcaption>Atardecer en las montañas</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < footer>
+                        </td>
+                        <td>
+                            Se utiliza para definir un pie de página en un documento o en una sección de un documento.
+                        </td>
+                        <td>
+                            No tiene atributos especificos pero admite atributos globales como class, id, style, etc.
+                        </td>
+                        <td>
+                            <footer>
+                                <p>Autor: Andres Perez<br>
+                                    <a href="mailto:Andres@example.com">Andres@example.com</a>
+                                </p>
+                            </footer>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < h1> to < h6>
+                        </td>
+                        <td>
+                            Se utilizan para definir los encabezados de las secciones de contenido en HTML, con < h1>
+                                siendo el encabezado de nivel más alto (generalmente el título principal) y < h6> el de
+                                    nivel más bajo.
+                        </td>
+                        <td>
+                            No tiene propiedades en especificas mas alla de los atributos globales como class, id,
+                            style, etc.
+                        </td>
+                        <td>
+                            <h1>Titulo Principal</h1>
+                            <h2>Subtitulo de la seccion</h2>
+                            <h3>Encabezado del tercer nivel</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < head>
+                        </td>
+                        <td>
+                            Se utiliza para definir la información acerca del documento.
+                        </td>
+                        <td>
+                            No tiene propiedades especificas, pero dentro de ellas se pueden incluir varios elementos
+                            importantes como title , meta , link , style , script
+                        </td>
+                        <td>
+                            <!DOCTYPE html>
+                            <html lang="es">
+
+                            <head>
+                                <title>Titulo del documento</title>
+                            </head>
+
+                            <body>
+                                <h1>Titulo del texto</h1>
+                                <p>Este es el tema</p>
+                            </body>
+
+                            </html>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < header>
+                        </td>
+                        <td>
+                            Se utiliza para representar un contenedor para los encabezados introductorios o de
+                            navegación de una página web o sección.
+                        </td>
+                        <td>
+                            No tiene propiedades especificas mas alla de los atributos globales como class, id, style,
+                            etc
+                        </td>
+                        <td>
+                            <header>
+                                <h1>Bienvenidos a Mi Sitio Web</h1>
+                                <nav>
+                                    <a href="#inicio">Inicio</a>
+                                    <a href="#sobre-nosotros">Sobre Nosotros</a>
+                                    <a href="#contacto">Contacto</a>
+                                </nav>
+                            </header>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < hgroup>
+                        </td>
+                        <td>
+                            Se utiliza para agrupar una serie de elementos de encabezado (< h1> a < h6>) para que se
+                                    presenten como un solo encabezado jerárquico.
+                        </td>
+                        <td>
+                            No tiene propiedades específicas más allá de los atributos globales como class, id, style,
+                            etc.
+                        </td>
+                        <td>
+                            <hgroup>
+                                <h2>Norway</h2>
+                                <p>La tierra con el sol de medianoche.</p>
+                            </hgroup>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < hr>
+                        </td>
+                        <td>
+                            Se Utiliza para definir un cambio de temática a partir de una línea.
+                        </td>
+                        <td>
+                            <em>color:</em> Color de linea.<br>
+                            <em>width:</em> Ancho de linea.<br>
+                            <em>height:</em> Grosor de la linea.<br>
+                            <em>border:</em> Bordes personalizados.<br>
+                            <em>margin:</em> Espacio alrededor de la linea.
+                        </td>
+                        <td>
+                            <p>Primer párrafo de texto.</p>
+                            <hr>
+                            <p>Segundo párrafo de texto, después de la línea horizontal.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < html>
+                        </td>
+                        <td>
+                            Es la raíz de un documento HTML. Todos los elementos de la página, incluidos los elementos
+                            de cabecera y el contenido visible, deben estar contenidos dentro de esta etiqueta.
+                        </td>
+                        <td>
+                            <em>lang:</em> Define el idioma del documento.<br>
+                            <em>dir:</em> Direccion del texto (izquierda a derecha , derecha a izquierda).<br>
+                            <em>xmlns:</em> Espacios de nombres XML.
+                        </td>
+                        <td>
+                            <!DOCTYPE html>
+                            <html lang="es">
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <title>Titulo del documento</title>
+                            </head>
+
+                            <body>
+                                <h1>Encabezado de la pagina</h1>
+                                <p>Contenido del documento</p>
+                            </body>
+
+                            </html>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < i>
+                        </td>
+                        <td>
+                            Se utiliza para mostrar texto en cursiva. Este texto suele ser una palabra o frase que se
+                            destaca por alguna razón, como un término técnico, un nombre de obra, o un término en otro
+                            idioma.
+                        </td>
+                        <td>
+                            <em>font-style:</em> Controla si el texto esta en cursiva o normal.<br>
+                            <em>color:</em> Define el color del texto en cursiva.<br>
+                            <em>font-size:</em> Ajusta el tamaño del texto.<br>
+                            <em>line-height:</em> Controla la altura de la linea.
+                        </td>
+                        <td>
+                            <p>Este es un <i>término técnico</i> importante.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < ins>
+                        </td>
+                        <td>
+                            Se utiliza para indicar que un texto ha sido añadido a un documento.
+                        </td>
+                        <td>
+                            <strong>cite:</strong> Especifica una URL que explica el contexto del cambio.<br>
+                            <strong>datetime:</strong> Define la fecha y hora de la adicion.
+                        </td>
+                        <td>
+                            <p>Este es un párrafo original. <ins datetime="2024-08-22T14:00">Este texto ha sido
+                                    añadido.</ins></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < kbd>
+                        </td>
+                        <td>
+                            Se utiliza para describir la entrada del teclado.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Define una o mas clases para aplicar estilos CSS especificos.<br>
+                            <strong>id:</strong> Asigna un identificador unico al elemento.<br>
+                            <strong>style:</strong> Permite aplicar estilos en linea al texto, como color o fuente.
+                        </td>
+                        <td>
+                            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+                            <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < li>
+                        </td>
+                        <td>
+                            Organiza contenido dentro de listas, ayudando a estructurar y presentar información de
+                            manera clara y ordenada.
+                        </td>
+                        <td>
+                            <strong>Contenido:</strong> Texto o cualquier otro elemento HTML.<br>
+                            <strong>Atributos globales:</strong> Soporta atributos como class, id, style.<br>
+                            <strong>Atributos value:</strong> (solo en listas ordenadas < ol>): Especifica el valor del
+                                elemento de la lista, lo cual es útil si se desea alterar la numeración predeterminada
+                                en listas ordenadas.
+                        </td>
+                        <td>
+                            <p>El elemento ol define una lista ordenada:</p>
+                            <ol style="list-style-position: inside;">
+                                <li>Cafe</li>
+                                <li>Te</li>
+                                <li>Leche</li>
+                            </ol>
+
+                            <p>El elemento ul define una lista desordenada:</p>
+                            <ul style="list-style-position: inside;">
+                                <li>Cafe</li>
+                                <li>Te</li>
+                                <li>Leche</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < link>
+                        </td>
+                        <td>
+                            Se especifica la relación entre el documento actual y un recurso externo.
+                        </td>
+                        <td>
+                            <strong>rel:</strong> Relacion entre el documento y el recurso.<br>
+                            <strong>href:</strong> URL del recurso enlazado.<br>
+                            <strong>type:</strong> Tipo de recurso (text/CSS).<br>
+                            <strong>media:</strong> Dispositivo para el que esta diseñado el recurso.<br>
+                            <strong>sizes:</strong> Dimensiones del icono (solo para rel="icon").
+                        </td>
+                        <td>
+
+                            <head>
+                                <link rel="stylesheet" href="styles.css">
+
+                            <body>
+                                <h1>Hola, mundo!</h1>
+                                <p>Este es un ejemplo de cómo usar la etiqueta <code>&lt;link&gt;</code> para enlazar
+                                    una hoja de estilo externa.</p>
+                            </body>
+                            </head>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < mark>
+                        </td>
+                        <td>
+                            Se utiliza para resaltar texto en un documento HTML, mostrando el texto con un fondo
+                            resaltado, generalmente amarillo, para destacar su importancia.
+                        </td>
+                        <td>
+                            <strong>Estilo por defecto:</strong> Fondo amarillo.<br>
+                            <strong>CSS personalizable:</strong> Puedes cambiar el estilo usando CSS.
+                        </td>
+                        <td>
+                            <p>Este es un texto normal, pero aquí hay un <mark>texto resaltado</mark>.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < menu>
+                        </td>
+                        <td>
+                            Se utiliza para representar un menú de opciones o una lista de comandos. Este menú puede ser
+                            un grupo de enlaces de navegación, un menú contextual, o una lista de acciones.
+                        </td>
+                        <td>
+                            <strong>Atributos globales:</strong> Acepta todos los atributos globales como id, class,
+                            style, etc.<br>
+                            <strong>Tipo:</strong> Puede especificar el tipo de menu (deprecated).<br>
+                            <strong>Estilo por defecto:</strong> Se muestra como una lista no ordenada.
+                        </td>
+                        <td>
+                            <menu>
+                                <li><a href="#home">Inicio</a></li>
+                                <li><a href="#services">Servicios</a></li>
+                                <li><a href="#contact">Contacto</a></li>
+                            </menu>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < meta>
+                        </td>
+                        <td>
+                            Se utiliza para proporcionar metadatos sobre el documento HTML, como la codificación de
+                            caracteres, descripciones para motores de búsqueda, autor del documento, y más.
+                        </td>
+                        <td>
+                            <strong>charset:</strong> Define la codificacion de caracteres (UTF-8).<br>
+                            <strong>name:</strong> Nombre del metadato (description, keywords).<br>
+                            <strong>content:</strong> Valor asociado con el atributo name, http-equiv.<br>
+                            <strong>http-equiv:</strong> Proporciona informacion de control para el navegador (refresh,
+                            content-type).<br>
+                            <strong>viewport:</strong> Controla como se ve la pagina en dispositivo moviles.
+                        </td>
+                        <td>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Guía de Fotografía - Consejos para Principiantes</title>
+                                <meta name="author" content="Andres Pérez">
+
+                            <body>
+                                <h1>Guía de Fotografía para Principiantes</h1>
+                            </body>
+                            </head>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < nav>
+                        </td>
+                        <td>
+                            Se utiliza para agrupar un conjunto de enlaces de navegación. Estos enlaces suelen ser menús
+                            principales, barras de navegación, o cualquier otro tipo de enlaces que permiten moverse
+                            dentro de un sitio web o aplicación.
+                        </td>
+                        <td>
+                            No tiene atributos globales específicos de la etiqueta. pero se pueden usar los atributos
+                            globales como class, id, style, etc.
+                        </td>
+                        <td>
+                            <nav>
+                                <a href="/html/">HTML</a>
+                                <a href="/css/">CSS</a>
+                                <a href="/js/">JavaScript</a>
+                                <a href="/python/">Python</a>
+                            </nav>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < noscript>
+                        </td>
+                        <td>
+                            Se utiliza para definir contenido alternativo que se mostrará solo si el navegador no
+                            soporta scripts o si el usuario ha desactivado JavaScript.
+                        </td>
+                        <td>
+                            No tiene atributos específicos. Utiliza los atributos globales estándar como class, id,
+                            style, etc.
+                        </td>
+                        <td>
+                            <script>
+                                document.write("Bienvenidos")
+                            </script>
+                            <noscript>¡Lo sentimos, su navegador no es compatible con JavaScript!</noscript>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < ol>
+                        </td>
+                        <td>
+                            Se utiliza para crear una lista ordenada, donde cada elemento de la lista se muestra con un
+                            número o un carácter alfabético en un orden secuencial.
+                        </td>
+                        <td>
+                            <strong>type:</strong> Tipo de marcador de la lista (1, `A`, `a`, `I`, `i`).<br>
+                            <strong>start:</strong> Numero o caracter de inicio de la lista.<br>
+                            <strong>reversed:</strong> Invierte el orden de la lista.<br>
+                            Atributos Globales: Como id, class, style, etc.
+                        </td>
+                        <td>
+                            <ol style="list-style-position: inside;">
+                                <li>Café</li>
+                                <li>Té</li>
+                                <li>Leche</li>
+                            </ol>
+                            <br>
+                            <ol start="50" style="list-style-position: inside;">
+                                <li>Café</li>
+                                <li>Té</li>
+                                <li>Leche</li>
+                            </ol>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < p>
+                        </td>
+                        <td>
+                            Se utiliza para representar un parrafo de texto. Un párrafo en HTML es un bloque de texto
+                            separado de otros bloques por espacio vertical.
+                        </td>
+                        <td>
+                            <strong>align:</strong>Obsoltea en HTML5 pero define la alineación del texto dentro del
+                            párrafo y Los valores posibles son left, right, center, y justify.
+                        </td>
+                        <td>
+                            <p>Este es un párrafo de ejemplo.</p>
+                            <p align="center">Este párrafo está centrado.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < pre>
+                        </td>
+                        <td>
+                            Se utiliza para contener texto que debe mostrarse con un formato específico, manteniendo los
+                            espacios en blanco y saltos de línea.
+                        </td>
+                        <td>
+                            <em>width:</em> Obsoleto. Define el ancho del bloque de texto, ya no se recomienda usar.<br>
+                            <em>CSS:</em> Se puede aplicar CSS para estilizar el contenido como cambiar la fuente o el
+                            calor.<br>
+                        </td>
+                        <td>
+                            <pre>
+                                Hola a todos
+                                esto es un ejemplo
+                                de la etiqueta < pre>
+                            </pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < q>
+                        </td>
+                        <td>
+                            Se utiliza para definir citas textuales breves dentro de un párrafo.
+                        </td>
+                        <td>
+                            <strong>cite:</strong> Define el URL de la fuente de la cita.
+                        </td>
+                        <td>
+                            <p>Como dijo Albert Einstein, <q cite="https://example.com/quote">La imaginación es más
+                                    importante que el conocimiento.</q></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < rp>
+                        </td>
+                        <td>
+                            Se utiliza para definir que se debe mostrar en navegadores que no soportan script de ruby.
+                        </td>
+                        <td>
+                            No tiene propiedades especificas.
+                        </td>
+                        <td>
+                            <ruby>
+                                漢 <rp>(</rp>
+                                <rt>ㄏㄢˋ</rt>
+                                <rp>)</rp>
+                            </ruby>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < rt>
+                        </td>
+                        <td>
+                            Se utiliza para definir una pronunciación de caracteres
+                        </td>
+                        <td>
+                            No tiene atributos especificos mas alla de los atributos globales.
+                        </td>
+                        <td>
+                            <ruby>
+                                漢 <rt> ㄏㄢˋ </rt>
+                            </ruby>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < ruby>
+                        </td>
+                        <td>
+                            Se utiliza para marcar un texto que necesita una anotación, comúnmente usada en idiomas como
+                            japonés o chino, donde se agrega una pronunciación o explicación junto al texto principal.
+                        </td>
+                        <td>
+                            No tiene atributos específicos más allá de los atributos globales.
+                        </td>
+                        <td>
+                            <ruby>
+                                漢 <rt> ㄏㄢˋ </rt>
+                            </ruby>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < s>
+                        </td>
+                        <td>
+                            Se utiliza para representar texto que se considera tachado o incorrecto.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Define una o mas clases CSS para aplicar estilos especificos.<br>
+                            <strong>id:</strong> Asigna un identificador unico al elemento para referenciarlo en CSS o
+                            JavaScript.<br>
+                            <strong>style:</strong> Permite aplicar estilos en linea, como color o decoracion de texto
+                            adicional.
+                        </td>
+                        <td>
+                            <p><s>¡Solo quedan 50 entradas!</s></p>
+                            <p>¡AGOTADO!</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < samp>
+                        </td>
+                        <td>
+                            Se utiliza para mostrar el texto de salida de un programa de computadora.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Define una o mas clases CSS para aplicar estilos especificos al
+                            texto de salida.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento, útil para estilos o scripts
+                            específicos.<br>
+                            <strong>style:</strong> Permite aplicar estilos en línea, como color de fuente, tamaño de
+                            texto, o tipo de letra.<br>
+                        </td>
+                        <td>
+                            <p>Mensaje de mi computadora:</p>
+                            <p><samp>Archivo no encontrado.<br>Presione F1 para continuar</samp></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < section>
+                        </td>
+                        <td>
+                            Se utiliza para definir secciones en un documento, como bloques temáticos de contenido.
+                        </td>
+                        <td>
+                            <strong>aria-labelledby:</strong> Atributo ARIA para accesibilidad.<br>
+                            <strong>aria-describedby:</strong> Atributo ARIA para accesibilidad.
+                        </td>
+                        <td>
+                            <section>
+                                <h2>Noticias Recientes</h2>
+                                <p>Aquí puedes encontrar las últimas noticias sobre tecnología.</p>
+                            </section>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < small>
+                        </td>
+                        <td>
+                            Se utiliza para mostrar texto en un tamaño más pequeño, proporcionando una forma de reducir
+                            la prominencia de ciertos fragmentos de texto sin afectar su contenido.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Define una o más clases CSS para aplicar estilos específicos al
+                            texto pequeño.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento, útil para estilos o scripts
+                            específicos.<br>
+                            <strong>style:</strong> Permite aplicar estilos en línea, como color de fuente, tamaño de
+                            texto, o tipo de letra.
+                        </td>
+                        <td>
+                            <small>Este texto es menos destacado</small>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < span>
+                        </td>
+                        <td>
+                            Se utiliza para agrupar o marcar una parte del texto o contenido de un documento con el fin
+                            de aplicar estilos específicos o manipulación a través de JavaScript.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Permite aplicar una o más clases CSS para estilos específicos.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento, útil para estilos CSS
+                            específicos o para manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en línea aplicables al contenido.
+                        </td>
+                        <td>
+                            <span class="resaltado">Este texto está resaltado</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < strong>
+                        </td>
+                        <td>
+                            Se utiliza para indicar que el texto tiene una importancia fuerte o es más relevante en
+                            comparación con el texto circundante.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Permite aplicar estilos CSS específicos al texto resaltado.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento, útil para estilos CSS o
+                            manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en línea para personalizar la apariencia del
+                            texto.
+                        </td>
+                        <td>
+                            <strong>¡Este texto es importante!</strong>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <;style>;
+                        </td>
+                        <td>
+                            Se utiliza para definir estilos CSS que se aplicarán a la página o al documento HTML.
+                        </td>
+                        <td>
+                            <strong>type:</strong> Especifica el tipo de estilo usualmente <code>text/css</code>. Este
+                            es el valor predeterminado y generalmente no es necesario especificarlo.<br>
+                            <strong>media:</strong> Define en qué tipo de medios o dispositivos se aplicarán los
+                            estilos.<br>
+                            <strong>scoped:</strong> Atributo obsoleto que limitaba el alcance de los estilos al
+                            contenedor del documento.
+                        </td>
+                        <td>
+                            <style>
+                                .destacado {
+                                    color: rgb(0, 33, 251); /* Solo aplicará a elementos con la clase 'destacado' */
+                                }
+                            </style>
+                            
+                            <p class="destacado">Este texto estará en Azul.</p>
+                            <p>Este texto estará en el color predeterminado.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < sub>
+                        </td>
+                        <td>
+                            Se usa para aplicar un formato de subíndice a su contenido, presentando el texto más pequeño
+                            y desplazado hacia abajo en relación con la línea base del texto circundante.
+                        </td>
+                        <td>
+                            <strong>class:</strong> permite aplicar estilos CSS especificos al texto en subindice.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento para estilos CSS específicos
+                            o manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en linea para personalizar la apariencia del
+                            subindice.
+                        </td>
+                        <td>
+                            <p>Este texto contiene <sub>subindice</sub> texto.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < summary>
+                        </td>
+                        <td>
+                            Se utiliza para proporcionar un encabezado o resumen visible para un elemento < details>.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Permite aplicar estilos CSS especificos al encabezado.<br>
+                            <strong>id:</strong> Asigna un identificador unico al elemento para estilos CSS especificos
+                            o manipulacion con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en linea para personalizar la apariencia del
+                            encabezado.
+                        </td>
+                        <td>
+                            <details>
+                                <summary>Ver más detalles</summary>
+                                Este es el contenido adicional que se muestra al hacer clic en el encabezado.
+                            </details>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < sup>
+                        </td>
+                        <td>
+                            Se utiliza para mostrar texto en formato de superíndice, es decir, más pequeño y ligeramente
+                            por encima de la línea base del texto circundante.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Permite aplicar estilos CSS específicos al texto en superíndice.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento para estilos CSS específicos
+                            o manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en línea para personalizar la apariencia del
+                            superíndice.
+                        </td>
+                        <td>
+                            <p>Este texto contiene <sup>superindice</sup> texto.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < table>
+                        </td>
+                        <td>
+                            Se utiliza para definir tablas de datos. Es una estructura que organiza información en filas
+                            y columnas, permitiendo la presentación de datos tabulares de una manera organizada y clara.
+                        </td>
+                        <td>
+                            <strong>border:</strong> Define el grosor del borde de la tabla.<br>
+                            <strong>cellpadding:</strong> Define el espacio entre el borde de la celda y su
+                            contenido.<br>
+                            <strong>cellspacing:</strong> Define el espacio entre las celdas de la tabla.<br>
+                            <strong>width:</strong> Define el ancho de la tabla.<br>
+                            <strong>height:</strong> Define la altura de la tabla.<br>
+                            <strong>class:</strong> Permite aplicar estilos CSS específicos a la tabla.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento para estilos CSS específicos
+                            o manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en línea para personalizar la apariencia de
+                            la tabla.
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Mes</th>
+                                    <th>Ahorros</th>
+                                </tr>
+                                <tr>
+                                    <td>Enero</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>Febrero</td>
+                                    <td>$80</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < tbody>
+                        </td>
+                        <td>
+                            Se utiliza agrupar las filas de datos principales dentro de una tabla HTML. Esto permite
+                            separar visual y semánticamente el contenido de la tabla de sus encabezados.
+                        </td>
+                        <td>
+                            <strong>class:</strong> Permite aplicar estilos CSS específicos a las filas contenidas.<br>
+                            <strong>id:</strong> Asigna un identificador único al elemento para estilos CSS específicos
+                            o manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en línea para personalizar la apariencia del
+                            contenido.<br>
+                        </td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Mes</th>
+                                        <th>Ahorros</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Enero</td>
+                                        <td>$600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Junio</td>
+                                        <td>$100</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Suma</td>
+                                        <td>$700</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < td>
+                        </td>
+                        <td>
+                            se utiliza para definir una celda de datos dentro de una tabla en HTML.
+                        </td>
+                        <td>
+                            <strong>colspan:</strong> Define el número de columnas que debe abarcar una celda.<br>
+                            <strong>rowspan:</strong> Define el número de filas que debe abarcar una celda.<br>
+                            <strong>headers:</strong> Especifica las celdas de encabezado que están asociadas con la
+                            celda de datos.<br>
+                            <strong>align:</strong> Define la alineación horizontal del contenido de la celda.<br>
+                            <strong>valign:</strong> Define la alineación vertical del contenido de la celda.<br>
+                            <strong>class:</strong> Permite aplicar estilos CSS específicos a la celda de datos.<br>
+                            <strong>id:</strong> Asigna un identificador único a la celda para estilos CSS específicos o
+                            manipulación con JavaScript.<br>
+                            <strong>style:</strong> Permite definir estilos en línea para personalizar la apariencia de
+                            la celda de datos.
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Celda A</td>
+                                    <td>Celda B</td>
+                                </tr>
+                                <tr>
+                                    <td>Celda C</td>
+                                    <td>Celda D</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < tfoot>
+                        </td>
+                        <td>
+                            Se utiliza para agrupar el contenido del pie de una tabla.
+                        </td>
+                        <td>
+                            Se recomienda colocarla antes de < tbody>. Contiene elementos < tr> y admite atributos
+                                    globales como < class>, < id>, etc.
+                        </td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Mes</th>
+                                        <th>Ahorros</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Agosto</td>
+                                        <td>$50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Noviembre</td>
+                                        <td>$250</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Suma</td>
+                                        <td>$300</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < th>
+                        </td>
+                        <td>
+                            Se utiliza para definir una celda de encabezado en una tabla. Se usa para etiquetar columnas
+                            o filas, proporcionando un contexto adicional sobre los datos contenidos en esas secciones
+                            de la tabla.
+                        </td>
+                        <td>
+                            Puede utilizar atributos globales como <;class>;, <;id>;, <;style>;. Además, admite el
+                                        atributo <;scope>; para definir el alcance de la celda y <;abbr>; para
+                                                abreviaturas.
+                        </td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Producto 1</td>
+                                        <td>$50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto 2</td>
+                                        <td>$50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < thead>
+                        </td>
+                        <td>
+                            Se utiliza para agrupar una o más filas de encabezado en una tabla HTML.
+                        </td>
+                        <td>
+                            Atributos globales como <;class>;, <;id>;, <;style>;. Se utiliza con <;tr>; para definir
+                                            filas de encabezado y con <;th>; para definir las celdas de encabezado.
+                        </td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Año</th>
+                                        <th>Ahorros</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2014</td>
+                                        <td>$100.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020</td>
+                                        <td>$50.000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Suma</td>
+                                        <td>$150.000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < time>
+                        </td>
+                        <td>
+                            Se utiliza para representar una hora, fecha o un rango de tiempo.
+                        </td>
+                        <td>
+                            Atributos globales como <;class>;, <;id>;, <;style>;. <br>
+                                        Atributo <;datetime>; para especificar el tiempo en formato ISO 8601.
+                        </td>
+                        <td>
+                            <p>El evento se llevará a cabo el <time datetime="2024-08-23">23 de agosto de 2024</time>.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            < title>
+                        </td>
+                        <td>
+                            Se utiliza para definir el título del documento HTML, que es crucial para la estructura y la
+                            accesibilidad del contenido.
+                        </td>
+                        <td>
+                            Debe estar dentro de < head>.<br>
+                                Solo puede contener texto.<br>
+                                Se recomienda que tenga entre 50 y 60 caracteres para fines de SEO.
+                        </td>
+                        <td>
+
+                            <head>
+                                <title>Mi Página Web</title>
+
+                            <body>
+                                <h1>Bienvenido a Mi Página Web</h1>
+                            </body>
+                            </head>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< tr></td>
+                        <td>
+                            Se utiliza para definir una fila en una tabla HTML, lo que es una parte integral de la estructura de una tabla y, por ende, del documento HTML.
+                        </td>
+                        <td>
+                            Debe estar dentro de < table>, < thead>, < tbody>, o < tfoot>.<br>
+                            Soporta atributos globales.<br>
+                            Atributos obsoletos: align, valign.
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                  <th>Nombre</th>
+                                  <th>Edad</th>
+                                </tr>
+                                <tr>
+                                  <td>Juan</td>
+                                  <td>30</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< u></td>
+                        <td>
+                            Se utiliza para subrayar texto, lo cual afecta la presentación visual del contenido.
+                        </td>
+                        <td>
+                            <strong>class:</strong> clase CSS para aplicar estilos.<br>
+                            <strong>id:</strong> Identificador unico para el elemento.<br>
+                            <strong>style:</strong> Estilos en linea para personalizacion.
+                        </td>
+                        <td>
+                            <p>Esto es un <u>Texto subrayado</u> en un parrafo.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< ul></td>
+                        <td>
+                            Se utiliza para definir una lista no ordenada en un documento HTML. 
+                        </td>
+                        <td>
+                            <strong>type:</strong> Tipo de viñeta para los elementos de la lista (valores: circle, disc, square). <br>
+                            Atributos globales: class, id, style.<br>
+                        </td>
+                        <td>
+                            <ul style="list-style-position: inside;">
+                             <li>Item 1</li>
+                             <li>Item 2</li>
+                             <li>Item 3</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< var></td>
+                        <td>
+                            Se utiliza para representar el nombre de una variable en un contexto matemático o en fragmentos de código.
+                        </td>
+                        <td>
+                            Atributos globales: class, id, style, title.<br>
+                        </td>
+                        <td>
+                            <p>La fórmula para calcular el área es <var>A</var> = <var>π</var>r<sup>2</sup></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>< wbr></td>
+                        <td>
+                            Se utiliza para indicar un posible punto de ruptura de línea en un texto largo, permitiendo al navegador decidir si debe romper la línea en ese punto si es necesario. 
+                        </td>
+                        <td>
+                            Uso principal: Facilitar la lectura de textos largos o sin espacios.<br>
+                            Compatibilidad: Soportada por navegadores modernos.<br>
+                        </td>
+                        <td>
+                            <p>
+                                Este texto es muy largo<wbr>y no tiene espacios<wbr>para que se rompa la línea.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Finaliza-->
+        </div>
+
+        <footer id="fprincipal">
+            <div>Copyright © 2024 Andres Perez</div>
+        </footer>
+    </main>
+</body>
+
+</html>
